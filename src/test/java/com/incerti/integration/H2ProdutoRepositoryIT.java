@@ -1,8 +1,8 @@
 package com.incerti.integration;
 
 import com.incerti.CalculaTarifasApplicationRunner;
-import com.incerti.adapter.persistence.H2ProdutoRepository;
-import com.incerti.adapter.persistence.ProdutoEntity;
+import com.incerti.adapter.datastorage.H2ProdutoRepository;
+import com.incerti.adapter.datastorage.ProdutoEntity;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.incerti.adapter.persistence;
+package com.incerti.adapter.datastorage;
 
 import com.incerti.adapter.mappers.ProdutoEntityMapper;
 import com.incerti.aplication.repository.ProdutoRepository;

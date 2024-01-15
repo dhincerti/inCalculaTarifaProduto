@@ -1,4 +1,4 @@
-package com.incerti.adapter.persistence;
+package com.incerti.adapter.datastorage;
 
 import com.incerti.aplication.repository.TarifasRepository;
 import com.incerti.aplication.usecases.TarifasUseCase;

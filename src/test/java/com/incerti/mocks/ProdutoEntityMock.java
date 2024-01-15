@@ -1,6 +1,6 @@
 package com.incerti.mocks;
 
-import com.incerti.adapter.persistence.ProdutoEntity;
+import com.incerti.adapter.datastorage.ProdutoEntity;
 import com.incerti.utils.CategoriaUtils;
 import com.incerti.utils.PrecoUtils;
 import lombok.experimental.UtilityClass;

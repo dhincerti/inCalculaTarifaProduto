@@ -1,4 +1,4 @@
-package com.incerti.adapter.persistence;
+package com.incerti.adapter.datastorage;
 
 import org.springframework.data.repository.CrudRepository;
 

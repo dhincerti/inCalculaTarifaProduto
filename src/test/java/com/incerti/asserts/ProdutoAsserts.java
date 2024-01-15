@@ -1,6 +1,6 @@
 package com.incerti.asserts;
 
-import com.incerti.adapter.persistence.ProdutoEntity;
+import com.incerti.adapter.datastorage.ProdutoEntity;
 import com.incerti.adapter.rest.response.ProdutoResponse;
 import com.incerti.domain.model.Produto;
 import lombok.experimental.UtilityClass;

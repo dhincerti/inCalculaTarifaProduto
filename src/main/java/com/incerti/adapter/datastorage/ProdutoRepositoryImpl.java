@@ -1,4 +1,4 @@
-package com.incerti.adapter.persistence;
+package com.incerti.adapter.datastorage;
 
 import com.incerti.adapter.mappers.ProdutoEntityMapper;
 import com.incerti.aplication.repository.ProdutoRepository;
@@ -27,14 +27,14 @@ public class ProdutoRepositoryImpl implements ProdutoRepository {
 
     @Override
     public Produto consulta(UUID id) {
-        ProdutoEntity produto = findByIdOrThrows(id);
+        ProdutoEntity produto = getProduto(id);
 
         return ProdutoEntityMapper.map(produto);
     }
 
     @Override
     public Produto atualiza(Produto produto) {
-        ProdutoEntity produtoAtual = findByIdOrThrows(produto.getId());
+        ProdutoEntity produtoAtual = getProduto(produto.getId());
         ProdutoEntity produtoAtualizado = ProdutoEntityMapper.map(produtoAtual.getId(), produto);
 
         produtoAtualizado = h2ProdutoRepository.save(produtoAtualizado);
@@ -48,7 +48,7 @@ public class ProdutoRepositoryImpl implements ProdutoRepository {
     }
 
 
-    private ProdutoEntity findByIdOrThrows(UUID id) {
+    private ProdutoEntity getProduto(UUID id) {
         return h2ProdutoRepository.findById(id)
                 .orElseThrow(ProdutoNaoEncontratoException::produtoNaoEncontrato);
     }
